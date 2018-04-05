@@ -90,41 +90,41 @@ namespace TravisCILab
         [Test]
         public void Divide_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
-            Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
-            Assert.Throws<FormatException>(() => Program.Divide("a", "a"));
+            Assert.Throws<FormatException>(() => Divide("1", "a"));
+            Assert.Throws<FormatException>(() => Divide("a", "1"));
+            Assert.Throws<FormatException>(() => Divide("a", "a"));
         }
 
         [Test]
         public void Divide_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
+            Assert.Throws<ArgumentNullException>(() => Divide("1", null));
+            Assert.Throws<ArgumentNullException>(() => Divide(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Divide(null, null));
         }
 
         [Test]
         public void Power_Valid()
         {
-            Assert.AreEqual(1, Program.Power("1", "2"));
-            Assert.AreEqual(9, Program.Power("3", "2"));
-            Assert.AreEqual(78125, Program.Power("5", "7"));
+            Assert.AreEqual(1, Power("1", "2"));
+            Assert.AreEqual(9, Power("3", "2"));
+            Assert.AreEqual(78125, Power("5", "7"));
         }
 
         [Test]
         public void Power_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Power("1", "a"));
-            Assert.Throws<FormatException>(() => Program.Power("a", "1"));
-            Assert.Throws<FormatException>(() => Program.Power("a", "a"));
+            Assert.Throws<FormatException>(() => Power("1", "a"));
+            Assert.Throws<FormatException>(() => Power("a", "1"));
+            Assert.Throws<FormatException>(() => Power("a", "a"));
         }
 
         [Test]
         public void Power_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
-            Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
+            Assert.Throws<ArgumentNullException>(() => Power("1", null));
+            Assert.Throws<ArgumentNullException>(() => Power(null, "1"));
+            Assert.Throws<ArgumentNullException>(() => Power(null, null));
         }
     }
 }
